@@ -13,9 +13,9 @@ Integration wp-config file in Wordpress for switch environment: `local`, `stagin
 git clone https://github.com/ffranz/wp-config.git
 ```
 
-2) Replace `DEFINE` variable in `wp-config.php` with this:
+2) Replace `DEFINE` variables in `wp-config.php` with this:
 
-```html
+```php
 require('wp-config/wp-environments.php');
 ```
 
