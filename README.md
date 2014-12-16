@@ -7,19 +7,27 @@ Integration wp-config file in Wordpress for switch environment: `local`, `stagin
 
 ### How to use
 
-1. Copy `wp-config` folder on Wordpress root.
+1) Copy repository on Wordpress root.
 
-2. Enter this code by replacing the variable DEFINE in `wp-config.php`.
+```html
+git clone https://github.com/ffranz/wp-config.git
+```
+
+2) Replace `DEFINE` variable in `wp-config.php` with this:
 
 ```html
 require('wp-config/wp-environments.php');
 ```
 
-3. Change variable on `.local`, `.staging` and `.production` file.
+3) Change variable on `.local`, `.staging` and `.production` file.
 
-`define('DB_NAME', 'database_name_here');`
-`define('DB_USER', 'username_here');`
-`define('DB_PASSWORD', 'password_here');`
-`define('DB_HOST', 'localhost');`
-`define('DB_CHARSET', 'utf8');`
-`define('DB_COLLATE', '');`
+```php
+define('DB_NAME', 'database_name_here');
+define('DB_USER', 'username_here');
+define('DB_PASSWORD', 'password_here');
+define('DB_HOST', 'localhost');
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', '');
+```
+
+4) Enjoy!
